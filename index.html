@@ -9,8 +9,37 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="css/main.css" rel="stylesheet">
 </head>
-<h1>Hi</h1>
 <body>
+  <nav class="navbar navbar-expand-md px-3" role="navigation"><!--nav bar is taken from bootstrap-->
+    <div class="container-fluid">
+      <!-- Brand/logo -->
+      <a class="navbar-brand" href="index.html">
+        <img src="images/apts-logo.png" alt="logo image" class="logo-img">
+      </a>				  
+      <!-- hamburger button  -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav d-flex ms-auto justify-content-center">
+          <!-- Added justify-content-center class to center the menu -->
+          <li class="nav-item fw-semibold fs-5"><a class="nav-link" href="index.html">HOME</a></li>
+          <li class="nav-item fw-semibold fs-5"><a class="nav-link" href="about.html">ABOUT</a></li>
+          <li class="nav-item fw-semibold fs-5"><a class="nav-link" href="contacts.html">CONTACTS</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header>
+    <div class="container-fluid">
+      <h1 class="d-flex flex-column">
+        <span class="span1 me-auto animate__animated animate__slideInLeft">APARTMENTS1</span>
+        <span class="span2 ms-auto animate__animated animate__slideInRight">APARTMENTS2</span>
+      </h1>
+    </div>
+  </header>
 <div class="talk bg-info">
 <img src="/images/talks-man.png" alt="man talking" class="talk-man">
 </div>

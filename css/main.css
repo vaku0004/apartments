@@ -13,9 +13,14 @@ body, html {
   margin-top: -11200px;
 }*/
 
+.logo-img {
+  width: 150px;
+  height: auto;
+}
+
 .talk-man {
   position: absolute;
-  top: 18%;
+  top: 62%;
   left: 25%;
   z-index: 2; /* Устанавливаем значение z-index, чтобы talk-man был поверх main-img */
   width: 28%;
@@ -34,3 +39,16 @@ body, html {
   z-index: 1; /* Устанавливаем значение z-index, чтобы main-img был под talk-man */
 }
 
+h1 {
+  font-size: 7vw;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.span1 {
+padding-left: 13rem;
+}
+
+.span2 {
+padding-right: 13rem;
+}
