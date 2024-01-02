@@ -19,10 +19,6 @@ body, html {
 }
 
 
-.main-img {
-  position: relative; /* Обязательно установите position: relative на родителя main-img */
-  z-index: 1; /* Устанавливаем значение z-index, чтобы main-img был под talk-man */
-}
 
 h1 {
   font-size: 7vw;
@@ -91,26 +87,134 @@ padding-right: 13rem;
   background-color: rgb(244, 200, 242);
 }*/
 
-.box-img {
+.box-talk {
   position: relative;
   width: 100%;
+  z-index: 2;
+  background-color: rgb(35, 135, 45);
 }
 
 .main-img {
   width: 100%;
   height: auto;
   display: block;
+  z-index: 1;
 }
-
+/* 
 .overlay {
   position: absolute;
-  width: 400px;
-  height: 200px;
-  background-image: url('../images/talks-man.png'); /* Путь к вашему фоновому изображению */
-  background-size: cover; /* или другие значения, такие как contain */
-  background-position: center center; /* или другие значения */
+  width: 430px;
+  height: 230px;
+  background-image: url('../images/talks-man.png'); 
+  background-size: cover; 
+  background-position: 150px left; 
   background-repeat: no-repeat;
-  opacity: 1; /* Прозрачность фонового изображения (от 0 до 1) */
+  opacity: 1; 
+  z-index: 1;
   background-color: blueviolet;
-  top: 30%;
+  top: 100%;
+}*/
+
+.box {
+  background-color: blue;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+
+.talk-couple {
+  background-color: rgb(128, 92, 92);
+  z-index: 3;
+  width: 100%;
+  height: 390px;
+  position: absolute;
+  top: 3%;
+  opacity: 0.5;
+}
+
+.talks-man {
+  position: absolute;
+  top: 4%; /* Размещаем сверху посередине */
+  left: 35%; /* Размещаем посередине горизонтально */
+  width: 400px; /* Задаем ширину */
+  height: 200px; /* Задаем высоту */
+  z-index: 3; /* Помещаем вторую картинку над первой */
+
+}
+
+.talks-woman {
+  position: absolute;
+  top: 28%; /* Размещаем сверху посередине */
+  left: 55%; /* Размещаем посередине горизонтально */
+  width: 230px; /* Задаем ширину */
+  height: 120px; /* Задаем высоту */
+  z-index: 3; /* Помещаем вторую картинку над первой */
+}
+
+.talk-girls {
+  background-color: rgb(197, 215, 159);
+  z-index: 3;
+  width: 100%;
+  height: 390px;
+  position: absolute;
+  top: 20%;
+  opacity: 0.5;
+}
+
+.talk-girls:hover {
+  display: block;
+  opacity: 0.7;
+}
+
+.talks-girl1 {
+  position: absolute;
+  top: 23%; /* Размещаем сверху посередине */
+  left: 50%; /* Размещаем посередине горизонтально */
+  width: 400px; /* Задаем ширину */
+  height: 200px; /* Задаем высоту */
+  z-index: 3; /* Помещаем вторую картинку над первой */
+}
+
+.talks-girl2 {
+  position: absolute;
+  top: 39%; /*азмещаем сверху посередине */
+  left: 33%; /* Размещаем посередине горизонтально */
+  width: 280px; /* Задаем ширину */
+  height: 130px; /* Задаем высоту */
+  z-index: 3; /* Помещаем вторую картинку над первой */
+}
+
+.talk-friends {
+  background-color: rgb(139, 221, 242);
+  z-index: 3;
+  width: 100%;
+  height: 590px;
+  position: absolute;
+  top: 40%;
+  opacity: 0.5;
+}
+
+.talk-girls:hover {
+  display: block;
+  opacity: 0.7;
+}
+
+.talks-dog {
+  position: absolute;
+  top: 57%; /* Размещаем сверху посередине */
+  left: 55%; /* Размещаем посередине горизонтально */
+  width: 350px; /* Задаем ширину */
+  height: 180px; /* Задаем высоту */
+  z-index: 3; /* Помещаем вторую картинку над первой */
+}
+
+.talks-student {
+  position: absolute;
+  top: 10%; /*азмещаем сверху посередине */
+  left: 37%; /* Размещаем посередине горизонтально */
+  width: 300px; /* Задаем ширину */
+  height: 150px; /* Задаем высоту */
+  z-index: 3; /* Помещаем вторую картинку над первой */
 }
