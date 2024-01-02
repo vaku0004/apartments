@@ -38,12 +38,12 @@ padding-left: 13rem;
 padding-right: 13rem;
 }
 
-/* TALKS */
+/* TALKS 
 .talk-man {
   position: absolute;
   top: 62%;
   left: 25%;
-  z-index: 2; /* Устанавливаем значение z-index, чтобы talk-man был поверх main-img */
+  z-index: 2; 
   width: 28%;
   height: auto;
   opacity: 0.5;
@@ -59,7 +59,7 @@ padding-right: 13rem;
   position: absolute;
   top: 90%;
   left: 33%;
-  z-index: 2; /* Устанавливаем значение z-index, чтобы talk-man был поверх main-img */
+  z-index: 2; 
   width: 40%;
   height: auto;
   opacity: 0.5;
@@ -71,7 +71,7 @@ padding-right: 13rem;
   position: absolute;
   top: 215%;
   left: 20%;
-  z-index: 2; /* Устанавливаем значение z-index, чтобы talk-man был поверх main-img */
+  z-index: 2; 
   width: 45%;
   height: auto;
   opacity: 0.5;
@@ -83,10 +83,34 @@ padding-right: 13rem;
   position: absolute;
   top: 225%;
   left: 35%;
-  z-index: 2; /* Устанавливаем значение z-index, чтобы talk-man был поверх main-img */
+  z-index: 2; 
   width: 35%;
   height: auto;
   opacity: 0.5;
   transition: opacity 0.3s ease;
   background-color: rgb(244, 200, 242);
+}*/
+
+.box-img {
+  position: relative;
+  width: 100%;
+}
+
+.main-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  width: 400px;
+  height: 200px;
+  background-image: url('../images/talks-man.png'); /* Путь к вашему фоновому изображению */
+  background-size: cover; /* или другие значения, такие как contain */
+  background-position: center center; /* или другие значения */
+  background-repeat: no-repeat;
+  opacity: 1; /* Прозрачность фонового изображения (от 0 до 1) */
+  background-color: blueviolet;
+  top: 30%;
 }
